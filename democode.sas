@@ -32,7 +32,6 @@ selection = stepwise expb stb lackfit;
 output out=m3 p=prob xbeta=logit;
 run;
 
- 
-proc freq data=readmit.readmissions;
-table 'dv readmit flag'n;
+	proc freq data=readmit.readmissions;
+	table 'dv readmit flag'n;
 run;
