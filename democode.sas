@@ -7,10 +7,6 @@ run;
 proc contents data=readmit.readmissions;
 run;
 
-proc freq data=readmit.readmissions;
-table 'dv readmit flag'n;
-run;
-
 
 title "Readmissions by Gender";
 proc sgplot data=readmit.readmissions pctlevel=group;
